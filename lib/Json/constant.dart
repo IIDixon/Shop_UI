@@ -6,7 +6,7 @@ const String homeImg =
     'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60';
 
 const String profileUrl =
-    "https://images.unsplash.com/photo-1616597082843-de7ce757d548?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0N3x8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60";
+    "https://scontent.fsjp1-1.fna.fbcdn.net/v/t1.6435-9/42980409_1543539582458647_2100713008924721152_n.jpg?_nc_cat=104&ccb=1-6&_nc_sid=09cbfe&_nc_eui2=AeEkZ-yzahYIzB4rAio5dcdP-yXwQ-8W-8L7JfBD7xb7wtkrkogyA95Qq7YqRFNgEYqWUCWq4xQOYby5GbWZ4YCr&_nc_ohc=JVatUpybc1wAX9Db-t6&_nc_ht=scontent.fsjp1-1.fna&oh=00_AT9rQFsGRZv93SP7jZzDElzlCxU95SDBuD1I7OzlNhL1xw&oe=62A5746E";
 
 const List<Map<String, dynamic>> categories = [
   {

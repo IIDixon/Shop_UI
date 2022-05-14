@@ -154,8 +154,57 @@ class _StorePageState extends State<StorePage> {
                         height: 200,
                         width: double.infinity,
                         decoration: BoxDecoration(
-                          color: black.withOpacity(0.2),
+                          color: black.withOpacity(0.5),
                           borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(20),
+                              child: Align(
+                                alignment: Alignment.topRight,
+                                child: Container(
+                                  width: 65,
+                                  height: 25,
+                                  decoration: BoxDecoration(
+                                    color: white,
+                                    borderRadius: BorderRadius.circular(5),
+                                  ),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    children: [
+                                      Text(
+                                        storeList[index]['open'] == 0 ? 'Close' : 'Open',
+                                        style: const TextStyle(
+                                            fontSize: 13,
+                                            color: black,
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                      Container(
+                                        width: 8,
+                                        height: 8,
+                                        decoration: BoxDecoration(
+                                          color: storeList[index]['open'] == 0 ? Colors.redAccent : Colors.greenAccent,
+                                          shape: BoxShape.circle,
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(20),
+                              child: Row(
+                                children: [
+                                  const Icon(Icons.location_on, size: 20, color: white),
+                                  const SizedBox(width: 10),
+                                  Text(storeList[index]['name'], style: const TextStyle(fontSize: 18, color: white),),
+                                ],
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ],

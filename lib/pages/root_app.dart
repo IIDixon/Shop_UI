@@ -4,6 +4,9 @@ import 'package:shop_ui/Themes/Color.dart';
 import 'package:shop_ui/pages/home_page.dart';
 import 'package:shop_ui/pages/store_page.dart';
 
+import 'account_page.dart';
+import 'cart_page.dart';
+
 class RootApp extends StatefulWidget {
   const RootApp({Key? key}) : super(key: key);
 
@@ -30,39 +33,14 @@ class _RootAppState extends State<RootApp> {
   Widget getBody() {
     return IndexedStack(
       index: activeTab,
-      children: [
+      children: const [
         HomePage(),
         StorePage(),
+        AccountPage(),
+        CartPage(),
         Center(
           child: Text(
-            'Store',
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ),
-        Center(
-          child: Text(
-            'Account',
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ),
-        Center(
-          child: Text(
-            'Cart',
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ),
-        Center(
-          child: Text(
-            'More',
+            'MORE',
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
@@ -75,7 +53,7 @@ class _RootAppState extends State<RootApp> {
 
   Widget getFooter() {
     return Container(
-      height: 80,
+      height: 60,
       decoration: BoxDecoration(
           color: white,
           border: Border(top: BorderSide(color: grey.withOpacity(0.2)))),
